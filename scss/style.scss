@@ -1,0 +1,51 @@
+@import "_reset";
+@import "_fonts";
+
+.page {
+	margin: 0 auto;
+
+	max-width: 1024px;
+
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	line-height: 16.41px;
+	font-style: normal;
+}
+
+h4 {
+	font-size: 13px;
+	line-height: 14.06px;
+	color: #0e49b5;
+}
+
+.btn {
+	border: none;
+	background: none;
+	cursor: pointer;
+	&:focus {
+		outline: none;
+	}
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.input {
+	border: none;
+	cursor: pointer;
+	&:focus {
+		outline: none;
+	}
+}
+
+.shadow {
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+@import "_header";
+@import "_slider-banner";
+@import "_search";
+@import "_core";

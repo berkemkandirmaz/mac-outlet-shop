@@ -1,0 +1,186 @@
+.slick-slider {
+	width: 101%;
+	overflow: hidden;
+
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+}
+.slick-list {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	&:focus {
+		outline: none;
+	}
+
+	&.dragging {
+		cursor: pointer;
+	}
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+	position: relative;
+	left: 0;
+	top: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+
+	.slick-loading & {
+		visibility: hidden;
+	}
+}
+.slick-slide {
+	float: left;
+	height: 70vw;
+	min-height: 1px;
+
+	[dir="rtl"] & {
+		float: right;
+	}
+	&.slick-loading img {
+		display: none;
+	}
+
+	display: none;
+
+	&.dragging img {
+		pointer-events: none;
+	}
+
+	.slick-initialized & {
+		display: block;
+	}
+
+	.slick-loading & {
+		visibility: hidden;
+	}
+
+	.slick-vertical & {
+		display: block;
+		height: auto;
+		border: 1px solid transparent;
+	}
+}
+.slick-arrow.slick-hidden {
+	display: none;
+}
+
+.slider-banner {
+	max-height: 512px;
+	max-width: 1024px;
+
+	overflow: hidden;
+
+	&__item {
+		height: 70vw;
+		max-height: 512px;
+		width: 100%;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-size: cover;
+	}
+
+	&__ipad {
+		background-image: url(../img/banners/ipad_air_banner.jpg);
+	}
+
+	&__airpods {
+		background-image: url(../img/banners/airpods_pro_banner.png);
+	}
+
+	&__iphone {
+		background-image: url(../img/banners/iphone_12_banner.jpg);
+	}
+
+	&__iphone &__title {
+		display: none;
+	}
+
+	&__mac {
+		background-image: url(../img/banners/mac_book_banner.jpg);
+	}
+
+	&__tv {
+		background-image: url(../img/banners/apple_tv_banner.png);
+	}
+
+	&__content {
+		text-align: center;
+	}
+
+	&__title {
+		font-size: 72px;
+		line-height: 84.38px;
+		color: #fff;
+
+		@media (max-width: 750px) {
+			font-size: 10vw;
+		}
+
+		@media (max-width: 550px) {
+			line-height: 50px;
+		}
+	}
+
+	&__card-btn {
+		padding: 13px 25px;
+		margin: 15px 0;
+
+		color: #fff;
+		font-size: 20px;
+		line-height: 23.44px;
+
+		background-color: #0e49b5;
+		border-radius: 5px;
+		transition: 0.3s;
+
+		@media (max-width: 550px) {
+			padding: 8px 22px;
+			margin: 10px 0;
+
+			font-size: 16px;
+		}
+	}
+
+	&__card-btn:hover,
+	&__card-btn:active {
+		background-color: #102243;
+		transform: scale(1.05);
+	}
+}

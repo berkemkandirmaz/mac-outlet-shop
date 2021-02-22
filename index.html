@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link type="image/png" rel="icon" href="img/icons/fav.png" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body class="page">
+		<header class="header">
+			<a href="#"
+				><img
+					class="header__logo"
+					src="img/icons/logo.svg"
+					alt="MacOutlet"
+				/>
+			</a>
+			<button class="btn header__btn">
+				<div class="header__btn-order-block">
+					<img
+						class="header__order"
+						src="img/icons/cart.svg"
+						alt="card order"
+					/>
+				</div>
+				<span class="header__order-num">3</span>
+			</button>
+		</header>
+		<section class="slider-banner">
+			<div class="slider-banner__item slider-banner__ipad">
+				<div class="slider-banner__content">
+					<h2 class="slider-banner__title">IPad Air - 1</h2>
+					<button class="slider-banner__card-btn btn">
+						Add to card
+					</button>
+				</div>
+			</div>
+			<div class="slider-banner__item slider-banner__airpods">
+				<div class="slider-banner__content">
+					<h2 class="slider-banner__title">AirPods Pro</h2>
+					<button class="slider-banner__card-btn btn">
+						Add to card
+					</button>
+				</div>
+			</div>
+			<div class="slider-banner__item slider-banner__iphone">
+				<div class="slider-banner__content">
+					<h2 class="slider-banner__title">Iphone 12 / 12 Mini</h2>
+					<button class="slider-banner__card-btn btn">
+						Add to card
+					</button>
+				</div>
+			</div>
+			<div class="slider-banner__item slider-banner__mac">
+				<div class="slider-banner__content">
+					<h2 class="slider-banner__title">MacBook Pro 16</h2>
+					<button class="slider-banner__card-btn btn">
+						Add to card
+					</button>
+				</div>
+			</div>
+		</section>
+		<section class="search-sub">
+			<form class="search-form shadow">
+				<div class="search-form__block">
+					<img
+						class="search-form__input-submit"
+						src="img/icons/search.svg"
+						alt="search">
+					</img>
+					<input
+						id="searchInput"
+						class="input search-form__input-text"
+						type="text"
+						placeholder="Ender device name..."
+					/>
+				</div>
+				<div class="search-form__block">
+					<input
+						id="search-form__filter"
+						class="input search-form__blue-input"
+						type="image"
+						src="img/icons/filter.svg"
+						alt="filter"
+					/>
+					<input
+						id="search-form__sort"
+						class="input search-form__blue-input"
+						type="image"
+						src="img/icons/settings.svg"
+						alt="sort"
+					/>
+				</div>
+			</form>
+			<div
+				id="search-sub__sort"
+				class="search-sub__sort shadow"
+				style="display: none; opacity: 0"
+			>
+				<h4>Order</h4>
+				<form class="search-sub__form">
+					<label class="search-sub__label">
+						<input
+							class="search-sub__input"
+							type="radio"
+							value="default"
+							name="sort-option"
+							checked
+						/><span class="search-sub__span">Default</span>
+					</label>
+					<label class="search-sub__label">
+						<input
+							class="search-sub__input"
+							type="radio"
+							value="ascending"
+							name="sort-option"
+						/><span class="search-sub__span search-sub__ascending"
+							>Ascending</span
+						>
+					</label>
+					<label class="search-sub__label">
+						<input
+							class="search-sub__input"
+							type="radio"
+							value="descending"
+							name="sort-option"
+						/><span class="search-sub__span search-sub__descending"
+							>Descending</span
+						>
+					</label>
+				</form>
+			</div>
+			<div
+				id="filter-sub__sort"
+				class="filter-sub__sort shadow"
+				style="display: none; opacity: 0"
+			>
+				<form class="filter-sub__form">
+					<div class="filter-sub__block-category">
+						<h4>Category</h4>
+						<select class="filter-sub__select">
+							<option value="option1">Some option 1</option>
+							<option value="option2">Some option 2</option>
+							<option value="option3">Some option 3</option>
+						</select>
+					</div>
+					<div class="filter-sub__block-stock">
+						<h4>Stock</h4>
+						<select class="filter-sub__select">
+							<option value="option11">Some option 11</option>
+							<option value="option22">Some option 22</option>
+							<option value="option33">Some option 33</option>
+						</select>
+					</div>
+				</form>
+				<div class="filter-sub__results">
+					<button class="filter-sub__btn">Filter results</button>
+				</div>
+			</div>
+		</section>
+		<section class="core">
+			<main class="main"></main>
+		</section>
+		<script
+			src="https://code.jquery.com/jquery-2.2.0.min.js"
+			type="text/javascript"
+		></script>
+		<script src="js/items.js"></script>
+		<script src="js/index.js"></script>
+		<script
+			src="js/slider.js"
+			type="text/javascript"
+			charset="utf-8"
+		></script>
+	</body>
+</html>
